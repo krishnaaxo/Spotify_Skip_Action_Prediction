@@ -13,6 +13,10 @@ Hola, mi nombre es Krishna I'm a Machine Learning and Data Science Enthusiast. I
 ![Analysis 1](https://github.com/krishnaaxo/Spotify_Skip_Action_Prediction/blob/main/EDA_Images/Features_correlation.png)
 ![Analysis 1](https://github.com/krishnaaxo/Spotify_Skip_Action_Prediction/blob/main/EDA_Images/Hist_matrix.png)
 
+![Analysis 2](https://github.com/krishnaaxo/Spotify_Skip_Action_Prediction/blob/main/EDA_Images/PairPlot.png)
+
+![Analysis 3](https://github.com/krishnaaxo/Spotify_Skip_Action_Prediction/blob/main/EDA_Images/acoustic_vector_correlation.png)
+![Analysis 3](https://github.com/krishnaaxo/Spotify_Skip_Action_Prediction/blob/main/EDA_Images/scatter_matrix.png)
 
 ![Analysis 2](https://github.com/COOLMudi/Data-Scientist-Spotify-Skip-Action-Prediction-/blob/main/Project%20images/2.PNG)
 
