@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Skip Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div style="background-image: url('https://fuxwithit.com/wp-content/uploads/2021/05/Progetto-senza-titolo.png');">
+        <div class='login'>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Spotify Skip Prediction by Krishna More</h1>
+                </div>
+            </div>
+            <br><br><br>
+            <form action="{{ url_for('predict')}}" method="post">
+
+                <div class="form-group text-left container">
+                    <div>
+                        <label>Enter session position</label>
+                        <input type="text" name="session_position" placeholder="1 - 20" required="required" />
+                    </div>
+                    <div>
+                        <br />
+                        <label>context_switch</label>
+                        <select name="context_switch" id="context_switch">
+          <option value="1">True</option>
+          <option value="0">False</option>
+
+        </select>
+                        <br>
+                        </br>
+                    </div>
+                    <div>
+                        <br />
+                        <label>no_pause_before_play</label>
+                        <select name="no_pause_before_play" id="no_pause_before_play">
+          <option value="1">True</option>
+          <option value="0">False</option>
+
+        </select>
+                        <br>
+                        </br>
+                    </div>
+                    <div>
+                        <label>Enter hist_user_behavior_n_seekfwd</label>
+                        <input type="text" name="hist_user_behavior_n_seekfwd" placeholder="0-30" required="required" />
+                    </div>
+                    <div>
+                        <label>Enter hist_user_behavior_n_seekback</label>
+                        <input type="text" name="hist_user_behavior_n_seekback" placeholder="0-30" required="required" />
+                    </div>
+                    <div>
+                        <br />
+                        <label>hist_user_behavior_is_shuffle</label>
+                        <select name="hist_user_behavior_is_shuffle" id="hist_user_behavior_is_shuffle">
+          <option value="1">True</option>
+          <option value="0">False</option>
+
+        </select>
+                        <br>
+                        </br>
+                    </div>
+                    <div>
+                        <label>Enter hour_of_day</label>
+                        <input type="text" name="hour_of_day" placeholder="1-24" required="required" />
+                    </div>
+                    <div>
+                        <br />
+                        <label>context_type</label>
+                        <select name="context_type" id="context_type">
+          <option value="1">editorial_playlist</option>
+          <option value="2">user_collection</option>
+          <option value="3">radio</option>
+          <option value="4">personalized_playlist</option>
+          <option value="5">Catalog</option>
+          <option value="6">charts</option>
+
+        </select>
+                        <br>
+                        </br>
+                    </div>
+                    <div>
+                        <br />
+                        <label>hist_user_behavior_reason_start</label>
+                        <select name="hist_user_behavior_reason_start" id="hist_user_behavior_reason_start">
+          <option value="1">trackdoone</option>
+          <option value="2">forward_button</option>
+          <option value="3">back_button</option>
+          <option value="4">clickrow</option>
+          <option value="5">appload</option>
+          <option value="6">playbutton</option>
+          <option value="7">remote</option>
+          <option value="8">track_error</option>
+          <option value="9">endplay</option>
+
+        </select>
+                        <br>
+                        </br>
+                    </div>
+
+                    <div>
+                        <br />
+                        <label>hist_user_behavior_reason_end</label>
+                        <select name="hist_user_behavior_reason_end" id="hist_user_behavior_reason_end">
+          <option value="1">trackdoone</option>
+          <option value="2">forward_button</option>
+          <option value="3">back_button</option>
+          <option value="4">endplay</option>
+          <option value="5">logout</option>
+          <option value="6">remote</option>
+          <option value="7">click_row</option>
+
+        </select>
+                        <br>
+                        </br>
+                    </div>
+
+                    <div>
+                        <label>Enter song name</label>
+                        <input type="text" name="track" placeholder="Eg. Shape of you" required="required" />
+
+                        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+                    </div>
+                </div>
+            </form>
+            <br><br>
+        </div>
+        <div class="container text-center">{{ prediction_text }}</div>
+        <br>
+        <br><br><br><br><br><br><br>
+
+        <div class='footer'>
+            <div class="contact">
+                <a target="_blank" href="https://github.com/krishnaaxo"><i class="fab fa-github fa-lg contact-icon"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/krishna-more-a886ba1a9/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+            </div>
+            <p class='footer-description'>Made by Krishna More.</p>
+        </div>
+</body>
+
+</html>

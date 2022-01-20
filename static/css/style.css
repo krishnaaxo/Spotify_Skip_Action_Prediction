@@ -1,0 +1,32 @@
+label {
+    font-weight: bold;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    color: orange;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body {
+    padding-bottom: 50px;
+}
