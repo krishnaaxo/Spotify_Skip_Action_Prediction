@@ -32,3 +32,9 @@ Hola, mi nombre es Krishna I'm a Machine Learning and Data Science Enthusiast. I
 
 ![Feature Engineering 2](https://github.com/COOLMudi/Data-Scientist-Spotify-Skip-Action-Prediction-/blob/main/Project%20images/6.PNG)
 
+# App Interface
+![Feature Engineering 2](https://github.com/krishnaaxo/Spotify_Skip_Action_Prediction/blob/main/APP/1.png)
+![Feature Engineering 2](https://github.com/krishnaaxo/Spotify_Skip_Action_Prediction/blob/main/APP/2.png)
+
+
+
